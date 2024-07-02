@@ -38,7 +38,7 @@ char dll[] = "C:\\DllInjection.dll";
 unsigned int len = sizeof(dll) + 1;
 int main(int argc, char **argv)
 {
-    const wchar_t* processname = L"msedge.exe";
+    const wchar_t* processname = L"urprocess.exe"; //ur process here
     DWORD pID = FindProcessId(processname);
     if (pID == NULL) {
         printf("Can't find process!");
