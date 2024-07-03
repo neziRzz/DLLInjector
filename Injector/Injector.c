@@ -50,4 +50,5 @@ int main(int argc, char **argv)
     HANDLE remoteHandle = CreateRemoteThread(processHandle, NULL, 0, (LPTHREAD_START_ROUTINE)GetProcAddress(GetModuleHandleA("Kernel32.dll"), "LoadLibraryA"), buffer, 0, NULL);
     CloseHandle(processHandle);
     printf("Injected at:0x%X", buffer);
+    return 0;
 }
