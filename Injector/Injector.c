@@ -9,7 +9,7 @@ DWORD FindProcessId(const wchar_t* processname)
 
     hProcessSnap = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
     if (INVALID_HANDLE_VALUE == hProcessSnap){
-        printf("Invalid Handle!");
+        printf("Invaild Handle!");
     }
 
     pe32.dwSize = sizeof(PROCESSENTRY32);
